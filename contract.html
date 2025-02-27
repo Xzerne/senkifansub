@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Senki Fansub</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        body {
+            font-family: 'Press Start 2P', cursive;
+            text-align: center;
+            background: #0f0f0f;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            color: #00ffea;
+            padding: 10px;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.85);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px #00ffea;
+            max-width: 90%;
+            width: 400px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .logo {
+            width: 100px;
+            border-radius: 50%;
+            animation: shake 1.5s infinite;
+        }
+        h2 {
+            font-size: 1.2rem;
+            color: #00ffea;
+            text-shadow: 0 0 10px #00ffea;
+            animation: glitch 1s infinite;
+        }
+        p {
+            font-size: 0.8rem;
+            color: #ffffff;
+            text-shadow: 0 0 5px #00ffea;
+        }
+        .btn {
+            display: inline-block;
+            background: #00ffea;
+            color: black;
+            padding: 12px 20px;
+            margin-top: 10px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 0 10px #00ffea;
+            position: relative;
+            overflow: hidden;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px #00ffea;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-2px); }
+            50% { transform: translateX(2px); }
+            75% { transform: translateX(-2px); }
+            100% { transform: translateX(0); }
+        }
+        @keyframes glitch {
+            0% { text-shadow: 0 0 10px #00ffea, 0 0 20px #00ffea; }
+            20% { text-shadow: -2px 2px #00ffea, 2px -2px #00ffea; }
+            40% { text-shadow: 2px -2px #00ffea, -2px 2px #00ffea; }
+            60% { text-shadow: -2px -2px #00ffea, 2px 2px #00ffea; }
+            80% { text-shadow: 2px 2px #00ffea, -2px -2px #00ffea; }
+            100% { text-shadow: 0 0 10px #00ffea, 0 0 20px #00ffea; }
+        }
+        @media (max-width: 500px) {
+            .container { width: 95%; padding: 20px; }
+            .logo { width: 80px; }
+            h2 { font-size: 1rem; }
+            p { font-size: 0.7rem; }
+            .btn { font-size: 0.8rem; padding: 10px 15px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="logo" src="https://i.imgur.com/oYM9rme.jpeg" alt="Logo Fanpage">
+        <h2>Liên Hệ Fanpage</h2>
+        <p><strong>Tên Fanpage:</strong> Senki Fansub</p>
+        <p><strong>Mô tả:</strong> Đây là fanpage chính thức của chúng tôi.</p>
+        <p><strong>Email:</strong> thanhtai040312@gmail.com</p>
+        <a class="btn" href="https://www.facebook.com/senkifansub" target="_blank">Truy Cập Fanpage</a>
+        <a class="btn" href="https://www.facebook.com/nanashiacoder/" target="_blank">Liên Hệ Admin</a>
+    </div>
+</body>
+</html>
