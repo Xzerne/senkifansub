@@ -1,0 +1,11 @@
+{
+  "name": "senkifansub",
+  "version": "1.0.0",
+  "description": "Contract Fanpage Senki Fansub",
+  "scripts": {
+    "start": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
