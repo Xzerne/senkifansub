@@ -1,8 +1,14 @@
 {
   "version": 2,
+  "builds": [
+    {
+      "src": "contract.html",
+      "use": "@vercel/static"
+    }
+  ],
   "routes": [
     {
-      "src": "/contract",
+      "src": "/(.*)",
       "dest": "/contract.html"
     }
   ]
